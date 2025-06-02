@@ -24,22 +24,41 @@ b)	If the condition is false, print "false" using the 'print' method of 'System.
  ```
 /*
 Program to implement a variable and operators using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Udayakumar R
+RegisterNumber:  212222230163
 */
 ```
 
 ## Sourcecode.java:
+```java
+import java.util.Scanner;
+public class Demo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
+        boolean cond1 = a < 50;
+        boolean cond2 = a < b;
 
-
-
-
-
+        if (cond1 && cond2) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+    }
+}
+```
 
 ## OUTPUT:
+```
+Input    Expected   Got
 
+23       true       true
+34
 
-
+124      false      false
+23
+```
 ## RESULT:
 Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
