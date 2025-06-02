@@ -42,7 +42,7 @@ public class Area
         System.out.println("Area of Rectangle is " + area);
        }
        public static void main(String[] args) {
-         Area obj=new Area();
+         Area obj = new Area();
          obj.calculateArea();
        }
 }
