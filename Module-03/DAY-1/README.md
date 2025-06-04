@@ -24,7 +24,7 @@ RegisterNumber: 212222230163
 ```
 
 ## Sourcecode.java:
-```
+```java
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args)
@@ -34,10 +34,7 @@ public class Main {
    	String str = sc.nextLine();
 
  
-    	System.out.println(
-        	"The size of "
-        	+ "the String is "
-        	+ str.length());
+    	System.out.println("The size of "+ "the String is "+ str.length());
 	}
 }
 ```
