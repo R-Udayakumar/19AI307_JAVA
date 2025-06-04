@@ -50,7 +50,8 @@ public class Main {
 ## OUTPUT:
 
 ```
-Input	                 Result
+Input              Result
+
 2                 [college, engineering]
 college
 engineering
