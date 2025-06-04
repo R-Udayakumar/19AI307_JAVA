@@ -1,25 +1,39 @@
 # Ex.No:5(A)  DATA HIDING AND ENCAPSULATION
 ## AIM:
-To Create a java program to display name and location of the employee and use the encapsulation concepts
+To Create a java program to display the age of the person.Use access modifier private to achieve the data hiding concepts.
 
 ## ALGORITHM :
-1.  Start the program
-2.	Define class `Employee`:
--	a) Declare two private `String` variables: `name1` and `name2`
--	b) Define `setname(String n1)` method to set `name1` to `n1`
--	c) Define `setname2(String n2)` method to set `name2` to `n2`
--	d) Define `get1()` method to return `name1`
--	e) Define `get2()` method to return `name2`
-3.	Define `Main` class with `main` method:
--	a) Create `Scanner` object `sc` for input
--	b) Read `name1` and `name2` from user input
--	c) Create ` Employee ` object `hl`
--	d) Use `hl.setname(name1)` and `hl.setname2(name2)` to set the names
--	e) Print the values of `hl.get1()` and `hl.get2()`
-4.	End
+1. Start
 
+2.  Import the Scanner class for input.
 
+3. Define class Person:
 
+ - a) Declare a private int variable age.
+   
+ - b) Create a method setAge(int age):
+   
+ - c) Assign the input parameter age to the instance variable age.
+   
+ - d) Create a method getAge():
+   
+ - e) Return the value of age.
+
+4. Define class Main:
+
+   In the main method:
+   
+  - a) Create a Scanner object scanner to read user input.
+   
+  - b) Create an object p of class Person.
+   
+  - c) Read an integer from the user and store it in inputAge.
+   
+  - d) Call p.setAge(inputAge) to set the age in the Person object.
+   
+  - e) Print "My age is " followed by the value returned by p.getAge().
+
+5. End
 
 
 ## PROGRAM:
@@ -27,7 +41,7 @@ To Create a java program to display name and location of the employee and use th
 /*
 Program to implement a Data Hiding & Encapsulation using Java
 Developed by: Udayakumar R
-RegisterNumber:  212222230163
+RegisterNumber: 212222230163
 */
 ```
 
@@ -36,51 +50,36 @@ RegisterNumber:  212222230163
 ```java
 import java.util.Scanner;
 
-class Employee {
-    private String name1;
-    private String name2;
+class Person {
+    private int age;
 
-    public void setname(String n1) {
-        name1 = n1;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public void setname2(String n2) {
-        name2 = n2;
-    }
-
-    public String get1() {
-        return name1;
-    }
-
-    public String get2() {
-        return name2;
+    public int getAge() {
+        return age;
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String name1 = sc.nextLine();
-        String name2 = sc.nextLine();
-        Employee hl = new Employee();
-        hl.setname(name1);
-        hl.setname2(name2);
-        System.out.println(hl.get1());
-        System.out.println(hl.get2());
-        sc.close();
+        Scanner scanner = new Scanner(System.in);
+        Person p = new Person();
+
+        int inputAge = scanner.nextInt();
+        p.setAge(inputAge);
+
+        System.out.println("My age is " + p.getAge());
     }
 }
-
 ```
 
-
-
-
-
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/0715f756-6442-4fce-93ab-058899f25913)
 
+![image](https://github.com/user-attachments/assets/781fdc29-385a-4a25-bdb3-72d4c304f256)
 
 
 ## RESULT:
-Thus , the  java program to display name and location of the employee and use the encapsulation concepts executed successfully.
+Thus , the  java program to display the age of the person.Use access modifier private to achieve the data hiding concepts.
+
