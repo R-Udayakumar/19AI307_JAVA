@@ -52,8 +52,11 @@ public class Main {
 ```
 
 ## OUTPUT:
+```
+Input                                           Expected                                                     Got
 
-
+This is a line of text inside the string.      Output stream: This is a line of text inside the string.    Output stream: This is a line of text inside the string.
+```
 ## RESULT:
 Thus, java program to write data using ByteArrayOutputStream was executed and verified successfully.
 
