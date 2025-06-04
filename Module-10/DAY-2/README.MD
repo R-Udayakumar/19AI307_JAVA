@@ -55,8 +55,6 @@ Input              Result
 2                 [college, engineering]
 college
 engineering
-
-
 ```
 
 
