@@ -1,26 +1,27 @@
-# Ex.No:6(C)  HIERARCHICAL INHERITANCE 
+# Ex.No:6(B) MULTI-LEVEL INHERITANCE
 
 ## AIM:
-  To Develop a Java program to perform Hierarchical Inheritance for below scenario Parent have method " display" to display "This is Parent Class". Child1 have method "print" to display "This is Child1 Class" Child1 have method "print" to display "Child2 Class". In Main create object for both child1 and child2 and access its member function.
-
+To Develop a Java program to perform Multilevel Inheritance to calculate the area of circle..
 
 ## ALGORITHM :
-1.  Start the Program
-2.	Define class `Parent`:
--	a) Method `show()` to print "This is Parent Class"
-3.	Define class `Child1` that extends `Parent`:
--	a) Method `print()` to print "This is Child1 Class"
-4.	Define class `Child2` that extends `Parent`:
--	a) Method `display()` to print "This is Child2 Class"
+1.	Start the Program.
+2.	Define class `Shapes`:
+-	a) Method `print_shape()` to print "Shapes Class"
+3.	Define class `Circle` that extends `Shapes`:
+-	a) Declare integer `rad`
+-	b) Method `get()` to read `rad` from user input
+4.	Define class `Area` that extends `Circle`:
+-	a) Method `cal()` to calculate `result = 3.14 * rad * rad` and print "Area of Circle is " followed by `result`
 5.	In `Main` class `main` method:
--	a) Create `Child1` object `child` and call `show()` and `print()` on it
--	b) Create `Child2` object `chi` and call `show()` and `display()` on it
+-	a) Create `Area` object `obj`
+-	b) Call `print_shape()`, `get()`, and `cal()` on `obj` to display shape type, read radius, and calculate area
 6.	End
+
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Hierarchical Inheritance using Java
+Program to implement a MultiLevel Inheritance using Java
 Developed by: Udayakumar R
 RegisterNumber: 212222230163
 */
@@ -28,45 +29,46 @@ RegisterNumber: 212222230163
 
 ## Sourcecode.java:
 ```java
-class Parent {
-    public void display() {
-        System.out.println("This is Parent Class");
+import java.util.Scanner;
+class Shapes {
+    public void print_Shape() {
+        System.out.println("Shapes Class");
+    }
+}
+class Circle extends Shapes {
+    protected double radius;
+
+    // Method to get radius from the user
+    public void get() {
+        Scanner scanner = new Scanner(System.in);
+        radius = scanner.nextDouble();
     }
 }
 
-class Child1 extends Parent {
-    public void print() {
-        System.out.println("This is Child1 Class");
+class Area extends Circle {
+    public void calc() {
+        double area = 3.14 * radius * radius;
+        System.out.println("Area of Circle is " + area);
     }
 }
 
-class Child2 extends Parent {
-    public void print() {
-        System.out.println("This is Child2 Class");
-    }
-}
 public class Main {
     public static void main(String[] args) {
-        Child1 child1 = new Child1();
-        
-        child1.display(); 
-        child1.print();   
+        Area areaObj = new Area();
 
-        Child2 child2 = new Child2();
-        
-        child2.display(); 
-        child2.print();   
+        areaObj.get();          // Input radius
+        areaObj.print_Shape();  // Display Shapes Class
+        areaObj.calc();         // Calculate and display area
     }
 }
 ```
 
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/0ccbeaa4-5bc3-492c-9ea4-8328166d77c4)
+![image](https://github.com/user-attachments/assets/5068a0f2-8e7a-4376-8be8-791f56836439)
 
 ## RESULT:
-Thus the java program for Hierarchical inheritance was executed successfully.
-
+Thus the java program for multi-level inheritance was executed successfully.
 
 
 
