@@ -26,20 +26,59 @@ To Create a java program to display name and location of the employee and use th
  ```
 /*
 Program to implement a Data Hiding & Encapsulation using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Udayakumar R
+RegisterNumber:  212222230163
 */
 ```
 
 ## Sourcecode.java:
 
+```java
+import java.util.Scanner;
 
+class Employee {
+    private String name1;
+    private String name2;
+
+    public void setname(String n1) {
+        name1 = n1;
+    }
+
+    public void setname2(String n2) {
+        name2 = n2;
+    }
+
+    public String get1() {
+        return name1;
+    }
+
+    public String get2() {
+        return name2;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name1 = sc.nextLine();
+        String name2 = sc.nextLine();
+        Employee hl = new Employee();
+        hl.setname(name1);
+        hl.setname2(name2);
+        System.out.println(hl.get1());
+        System.out.println(hl.get2());
+        sc.close();
+    }
+}
+
+```
 
 
 
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/0715f756-6442-4fce-93ab-058899f25913)
 
 
 
