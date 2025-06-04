@@ -28,21 +28,19 @@ RegisterNumber:  212222230163
 
 ```java
 import java.util.*;
-
-
 public class GFG {
 
 	public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
 		List<String> al = new ArrayList<>();
-        int size=sc.nextInt();
-        for(int i=0;i<size;i++)
-        {
-				al.add(sc.next());
-        }
-        System.out.println(al);
-        al.add(1,sc.next());
+                int size=sc.nextInt();
+                for(int i=0;i<size;i++)
+                {
+                   al.add(sc.next());
+                }
+                System.out.println(al);
+                al.add(1,sc.next());
 		
 		System.out.println("After add element in index 1 :" + al);
 		al.set(2,sc.next());
