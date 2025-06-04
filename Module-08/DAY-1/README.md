@@ -22,12 +22,12 @@ RegisterNumber: 212222230163
 
 ## Sourcecode.java:
 ```java
-      FileOutputStream fout=new FileOutputStream("testout.txt");
-      String s="HI EVERYBODY...";    
-      byte b[]=s.getBytes();//converting string into byte array    
-      fout.write(b);    
-      fout.close();    
-      System.out.println("Successfully Completed");
+FileOutputStream fout=new FileOutputStream("testout.txt");
+String s="HI EVERYBODY...";    
+byte b[]=s.getBytes();//converting string into byte array    
+fout.write(b);    
+fout.close();    
+System.out.println("Successfully Completed");
 ```
 
 ## OUTPUT:
