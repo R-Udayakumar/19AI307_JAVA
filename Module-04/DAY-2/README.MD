@@ -52,6 +52,7 @@ class Subject
 {
     
     String subject1,subject2,subject3,subject4;
+
     void dispSub(String subject1,String subject2,String subject3,String subject4)
     {
         System.out.println(subject1+" "+subject2+" "+subject3+" "+subject4);
@@ -66,7 +67,6 @@ class Student
     {
         System.out.println(id);
         obj.dispSub("B.Tech","IT","Third","year");
-        //Write Your Code Here
     }
 }
 
